@@ -1,0 +1,273 @@
+{
+    "white": {
+        "action": "folder",
+        "folder": {
+            "names": [
+                "/211233543/9956543322"
+            ]
+        },
+        "redirect": {
+            "type": "303",
+            "urls": [
+                "https://ya.ru",
+                " https://google.com"
+            ]
+        },
+        "curl": {
+            "urls": [
+                "https://www.9111.ru/"
+            ]
+        },
+        "error": {
+            "codes": []
+        },
+        "domainfilter": {
+            "use": false,
+            "domains": [
+                {
+                    "name": "lalala.xxx.com",
+                    "action": "site:white"
+                },
+                {
+                    "name": "lamama.xxx.com",
+                    "action": "site:white"
+                }
+            ]
+        },
+        "jschecks": {
+            "enabled": false,
+            "events": [
+                "audiocontext",
+                "timezone"
+            ],
+            "timeout": "40000",
+            "obfuscate": true,
+            "timezone": true,
+            "tzstart": "-3",
+            "tzend": "4"
+        }
+    },
+    "black": {
+        "prelanding": {
+            "action": "none",
+            "folders": [
+                "preland"
+            ],
+            "redirect": {
+                "urls": [
+                    "https://ya.ru",
+                    "https://google.com"
+                ],
+                "type": 302
+            }
+        },
+        "landing": {
+            "action": "folder",
+            "folder": {
+                "names": [
+                    "/211233543/747474882"
+                ],
+                "conversions": {
+                    "script": "order.php",
+                    "logonbuttonclick": false
+                },
+                "customthankyoupage": {
+                    "use": true,
+                    "language": "RU",
+                    "upsell": {
+                        "use": false,
+                        "imgdir": "img",
+                        "header": "\u042d\u0442\u043e \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a!",
+                        "text": "\u042d\u0442\u043e \u0442\u0435\u043a\u0441\u0442!",
+                        "url": "http://ya.ru"
+                    }
+                }
+            },
+            "redirect": {
+                "urls": [
+                    "https://yandex.ru"
+                ],
+                "type": "303"
+            }
+        },
+        "jsconnect": "replace"
+    },
+    "pixels": {
+        "ya": {
+            "id": ""
+        },
+        "gtm": {
+            "id": "GTM-P46NC59V"
+        },
+        "fb": {
+            "subname": "px",
+            "pageview": true,
+            "viewcontent": {
+                "use": false,
+                "time": "30",
+                "percent": "75"
+            },
+            "conversion": {
+                "event": "Lead",
+                "fireonbutton": false
+            }
+        },
+        "tt": {
+            "subname": "tpx",
+            "pageview": true,
+            "viewcontent": {
+                "use": true,
+                "time": "30",
+                "percent": "75"
+            },
+            "conversion": {
+                "event": "\u041f\u043e\u043a\u0443\u043f\u043a\u0430",
+                "fireonbutton": false
+            }
+        }
+    },
+    "tds": {
+        "mode": "on",
+        "saveuserflow": false,
+        "filters": {
+            "allowed": {
+                "countries": [
+                    "FR",
+                    "CH",
+                    "CA",
+                    "BE",
+                    "LU",
+                    "DE"
+                ],
+                "os": [
+                    "Android",
+                    "iOS"
+                ],
+                "inurl": [],
+                "languages": [
+                    "fr"
+                ]
+            },
+            "blocked": {
+                "ips": {
+                    "filename": "",
+                    "cidrformat": false
+                },
+                "tokens": [
+                    "vsl"
+                ],
+                "useragents": [
+                    "facebook",
+                    "Facebot",
+                    "curl",
+                    "gce-spider",
+                    "yandex.com/bots",
+                    "OdklBot",
+                    "Android 4.4.2",
+                    "OS 6_0",
+                    " Windows Phone 8.0"
+                ],
+                "isps": [
+                    "facebook",
+                    "google",
+                    "yandex",
+                    "amazon",
+                    "azure",
+                    "digitalocean",
+                    "microsoft",
+                    "adspy",
+                    "adheart",
+                    "olhodedeus",
+                    "adsparo",
+                    "gurukiller"
+                ],
+                "referer": {
+                    "empty": true,
+                    "stopwords": [
+                        "adheart",
+                        "olhodedeus",
+                        "gurukiller",
+                        "adspy",
+                        "adminer",
+                        "adsparo"
+                    ]
+                },
+                "vpntor": true
+            }
+        }
+    },
+    "scripts": {
+        "back": {
+            "action": "off",
+            "value": "https://ya.ru"
+        },
+        "disabletextcopy": false,
+        "prelandingreplace": {
+            "use": false,
+            "url": "https://ya.ru"
+        },
+        "landingreplace": {
+            "use": false,
+            "url": "https://ya.ru"
+        },
+        "phonemask": {
+            "use": true,
+            "mask": "+7(\\\\999)999-99-99"
+        },
+        "comebacker": false,
+        "callbacker": false,
+        "addedtocart": false,
+        "imageslazyload": true
+    },
+    "subids": [
+        {
+            "name": "subid",
+            "rewrite": "sub1"
+        },
+        {
+            "name": "adn",
+            "rewrite": "sub2"
+        },
+        {
+            "name": "ad",
+            "rewrite": "sub3"
+        },
+        {
+            "name": "pl",
+            "rewrite": "sub4"
+        }
+    ],
+    "statistics": {
+        "password": "d5f700",
+        "subnames": [
+            {
+                "name": "adn",
+                "value": "Adset"
+            },
+            {
+                "name": "ad",
+                "value": "\u043a\u0440\u0435\u0430\u0442\u0438\u0432\u043d\u044b\u0439"
+            },
+            {
+                "name": "pl",
+                "value": "\u041c\u0435\u0441\u0442\u043e\u043c\u0435\u043d\u0442"
+            }
+        ],
+        "timezone": "America/Punta_Arenas"
+    },
+    "postback": {
+        "lead": "Lead",
+        "purchase": "\u041f\u043e\u043a\u0443\u043f\u043a\u0430",
+        "reject": "Reject",
+        "trash": "Trash",
+        "s2s": [
+            {
+                "url": "",
+                "method": "POST",
+                "events": [
+                    "Lead"
+                ]
+            }
+        ]
+    }
+}
